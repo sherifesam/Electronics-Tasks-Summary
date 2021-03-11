@@ -6,9 +6,9 @@ Parking Sensor.
 we used LDR as a proximity sensor and took its reading using ESP8266 and published it on a webserver and then we sent the readings to a mobile application `MIT APP INVENTOR` and a desktop application `Python - PYQT5` and they both monitored the readings and gave a warning when the sensor readings indicates a critical proximity level.
 
 ## Libraries we used 
-`ESP8266WebServer.h` -->  webserver  
-`PYQT5` --> Desktop APP GUI 
-`requests` --> communication between desktop app and webserver (it uses the get/post methods through http protocol)
+`ESP8266WebServer.h` -->  webserver.  
+`PYQT5` --> Desktop APP GUI.   
+`requests` --> communication between desktop app and webserver (it uses the get/post methods through http protocol).  
 
 ## Problems we faced  
 **Sending sensor readings from webserver to the desktop application using http**  
@@ -42,7 +42,7 @@ makes a prediction of where the person should be and sends it also to the fireba
 
 
 ## Problems we faced
-**the machine learning classifier was a python script which means we needed a running laptop all the time**
+**the machine learning classifier was a python script which means we needed a running laptop all the time**  
 our approach to fix this problem was that we converted the python script into a `C` code and then compiled it on the microcontrller itself and 
 for that we used a library called `micromlgen`.
 
